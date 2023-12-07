@@ -1,0 +1,218 @@
+.container{
+
+    max-width: 128rem;
+    margin: 8rem auto;
+    background-color: var(--grey-light-2);
+    box-shadow: var(--shadow-dark);
+    min-height: 50rem;
+
+    @media only screen and (max-width: $bp--largest){
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+
+
+    }
+
+}
+
+
+.header{
+
+    font-size: 1.4rem;
+
+    height: 7rem;
+    background-color: #E3C4A8;
+    border-bottom: 1px solid var(--grey-light-6);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: $bp--smallest){
+        flex-wrap: wrap;
+        align-content: space-around;
+        height: 11rem;
+    }
+
+    
+
+
+
+}
+
+.content{
+    display: flex;
+
+    @media only screen and (max-width: $bp--medium){
+       
+        flex-direction: column;
+    }
+
+
+
+}
+
+.sidebar{
+
+    background-color: var(--grey-dark-1);
+    flex-grow: 0; // we dont want this element to grow if their is some space.
+    
+    flex-shrink: 0; // we dont want this element to shrink if there is not enough space.
+    flex-basis: 18%;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+}
+
+.hotel-view{
+
+    background-color: var(--grey-light-6);
+    //test
+    
+    
+
+    flex-grow: 1; //we want the element to grow as much it can.
+
+
+
+
+}
+
+.details{
+    font-size: 1.4rem;
+
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--grey-light-2);
+    border-bottom: 1px solid var(--grey-light-6);
+    @media only screen and (max-width: $bp--medium){
+        padding: 3rem;
+    }
+
+    @media only screen and (max-width: $bp--small){
+        flex-direction: column;
+        
+    }
+
+}
+
+.description{
+
+    
+    
+    background-color: #FEFBF3;
+    box-shadow: var(--shadow-dark-1);
+    padding: 3rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 60%;
+    margin-right:4.5rem;
+    @media only screen and (max-width: $bp--medium){
+       padding: 2rem;
+       margin-right: 3rem;
+    }
+    
+    @media only screen and (max-width: $bp--small){
+       margin-right: 0;
+       margin-bottom: 3rem;
+      
+    }
+
+    
+
+    
+
+
+}
+
+.user-reviews{
+
+    background-color: var(--grey-light-2);
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+ 
+
+    
+
+
+}
+
+.video__animated{
+    width: 80%;
+    padding: 2rem;
+}
+
+.other__packages{
+    
+
+    &-heading{
+        padding-top: 2rem;
+        
+    background-color: var(--grey-light-2);
+    text-align: center;
+    color:#6b0f2f;
+    font-size: 2rem;
+    font-weight: 400;
+    @media only screen and (max-width: $bp--medium){
+        padding-bottom: 2rem;
+     }
+
+    
+    
+    }
+
+    &-heading2{
+       
+        padding-bottom: 3rem;
+    background-color: var(--grey-light-2);
+    text-align: center;
+    color:#6b0f2f;
+    font-size: 2rem;
+    border-bottom: 1px solid var(--grey-light-6);
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+
+
+    }
+    
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 0;
+    //background-image:linear-gradient(45deg, #00bcd4, #ffeb3b);
+    background-color: var(--grey-light-2);
+
+    
+    
+    
+    
+
+    
+}
+
+
+

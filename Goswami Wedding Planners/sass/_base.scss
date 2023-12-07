@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-primary: /*#eb2f64#f4ba55  */#DD5353;
+    --color-primary-2: #F2DEBA;
+    --color-primary-light: /*#ff3366 #e71b5b*/ #DD5353;
+    --color-primary-dark: #a00034;
+
+    --grey-light-1: #F8F0DF ;
+    --grey-light-2: #F8F0DF;
+    --grey-light-3: #f0eeee;
+    --grey-light-4: #fcf8e7;
+    --grey-light-5: #FAECD6;
+    --grey-light-6: #FEFBF3;
+
+    --grey-dark-1: /*#00113a*/ #4E6C50;
+    --grey-dark-2: #777;
+    --grey-dark-3: #999;
+    --secondary-light: #ffb900;
+    --secondary-dark: #ff7730;
+
+    --tertiary-light: #2998ff;
+    --tertiary-dark: #5643fa;
+
+    --quaterly-light : #2BAE66;
+    --quaterly-dark: #0d6535;
+    
+
+    
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
+    --shadow-dark-1: 0 2rem 6rem rgba(0,0,0, .06);
+}
+
+$bp--largest: 75em;// 1200px  1200/16 = 75
+$bp--large: 68.75em; //1100px
+$bp--medium: 56.25em; //900px
+$bp--forcards: 43.75em; // 700px
+$bp--small: 37.5em; // 600px
+$bp--smallest: 31.5em; // 500px
+
+
+
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+
+html{
+  box-sizing: border-box; 
+  font-size: 62.5%; //so 1rem = 10px , (what we want/browser default), so 10/16 = 62.5%
+
+  @media only screen and (max-width: $bp--large){
+    font-size: 50%;
+  }
+
+}
+
+body{
+  font-family: 'Open Sans';  
+  font-weight: 400;
+  line-height: 1.6;
+  color:var(--grey-dark-2);
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+}
