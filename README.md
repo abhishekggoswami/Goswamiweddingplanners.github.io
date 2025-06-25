@@ -8,7 +8,7 @@ A beautiful and responsive wedding planning website created using HTML, CSS, and
 
 ## 📸 Preview
 
-![Screenshot of Goswami Wedding Planners Website]![image](https://github.com/user-attachments/assets/9754a251-2356-4019-950e-d462486417de)
+![image](https://github.com/user-attachments/assets/9754a251-2356-4019-950e-d462486417de)
 
 ) <!-- Replace with actual screenshot URL if available -->
 
